@@ -1,0 +1,1 @@
+main1 uses soudndevice.OutputStream(), main2 uses sounddevice.play(). Bother crash when more than 4 tracks are added.
