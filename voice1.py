@@ -16,15 +16,8 @@ class Voice():
         self.stream.start()
         self.stream.write(self.file)
         self.loop_voice()
-        # print("thread finished")
     
 
     def loop_voice(self):
         thread = threading.Thread(target=self.__play_stream)
         thread.start()
-        # if thread.is_alive():
-        #     print('cool')
-        #     self.loop_voice()
-        # thread.join()
-        # self.stream.close()
-        # self.loop_voice()
